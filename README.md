@@ -2,14 +2,15 @@
 Implementation of distortion function calculation and comparison for different values of k to determine ideal k (number of clusters) in k-means clustering:
 
 Index:
-1. Description:
-2. Contents:
-3. Requirments:
-4. Execute Instructions:
-5. Authors:
+1. Description:<br>
+2. Contents:<br>
+3. Requirments:<br>
+4. Execute Instructions:<br>
+5. Authors:<br>
 
 #############################################################################################################################
-1. Description:
+<ol>
+<li><strong>Description:</strong>
 
 This is my quick and naive implementation of method discussed in the following paper by Pham et.al: http://www.ee.columbia.edu/~dpwe/papers/PhamDN05-kmeans.pdf 
   a.	The goal of a clustering algorithm is to identify regions in which the data points are concentrated. It is also     important to analyze the internal distribution of each cluster as well as its relation to other clusters in the data set. The distortion of a cluster is a measure of the distance between points in a cluster and its centroid: <br>
@@ -19,8 +20,8 @@ This is my quick and naive implementation of method discussed in the following p
   c.	The authors Pham et al. proceed to discuss further constrains that the sought-after function f(K) should verify for it to be informative to the problem of selection of K. They finally arrive at the following definition: Nd is the number of dimensions (attributes) of the data set and alpha is a weight factor. <br>
   <p><img src="https://datasciencelab.files.wordpress.com/2014/01/fk.png?w=359&h=192" align="middle"><br></p>
   d.	With this definition, f(K) is the ratio of the real distortion to the estimated distortion and decreases when there are areas of concentration in the data distribution. Values of K that yield small f(K) can be regarded as giving well-deﬁned clusters.
-  
-2. Contents:
+</li>
+<li> Contents:
   a. SRC
     1. main.cpp #function calls
     2. k_for_kmeans.h  #libraries included, variables and functions initialized
@@ -31,13 +32,17 @@ This is my quick and naive implementation of method discussed in the following p
     1. Lena.png
   c. Output
     1. results.txt 
-  
-3. Requirements:
-Since, I am working with images, I am using OpenCV 2.4.9. But this can be avoided by linking appropriate libraries(refer to k_for_kmeans.h) with the G++ compiler as well.
+</li>
 
-4. Execute Instructions:
+<li>Requirements:
+Since, I am working with images, I am using OpenCV 2.4.9. But this can be avoided by linking appropriate libraries(refer to k_for_kmeans.h) with the G++ compiler as well.
+</li>
+
+<li>Execute Instructions:
 CMAkeLists.txt highlights mentions the order to link the files. 
 Output is generated to the results.txt file in Output folder with the ideal k and its corresponding distortion
+</li>
 
-5. Authors:
+<li>Authors:
 Chinmaya Joshi
+</li>
