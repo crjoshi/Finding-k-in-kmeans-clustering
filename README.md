@@ -16,7 +16,7 @@ Index:<br>
 This is my quick and naive implementation of method discussed in the following paper by Pham et.al: http://www.ee.columbia.edu/~dpwe/papers/PhamDN05-kmeans.pdf
 <ul>
 <li>The goal of a clustering algorithm is to identify regions in which the data points are concentrated. It is also     important to analyze the internal distribution of each cluster as well as its relation to other clusters in the data set. The distortion of a cluster is a measure of the distance between points in a cluster and its centroid: <br>
-  <div style="text-align:center"><img src = "https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+I_j+%3D+%5Csum_%7B%5Cmathrm%7Bx%7D_i+%5Cin+C_j%7D+%7C%7C%5Cmathrm%7Bx%7D_i+-+%5Cmu_j+%7C%7C%5E2&bg=ffffff&fg=000000&s=0" align="middle"></div><br>
+  <div style="text-align:center"><img src = "https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+I_j+%3D+%5Csum_%7B%5Cmathrm%7Bx%7D_i+%5Cin+C_j%7D+%7C%7C%5Cmathrm%7Bx%7D_i+-+%5Cmu_j+%7C%7C%5E2&bg=ffffff&fg=000000&s=0"></div><br>
 </li>
 <li>The global impact of all clusters’ distortions is given by the quantity:<br>
   <p><img src="https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+S_k+%3D+%5Csum_%7Bj%3D1%7D%5EK+I_j&bg=ffffff&fg=000000&s=0" align="middle"></p>
@@ -26,7 +26,9 @@ This is my quick and naive implementation of method discussed in the following p
 </li>
 <li>With this definition, f(K) is the ratio of the real distortion to the estimated distortion and decreases when there are areas of concentration in the data distribution. Values of K that yield small f(K) can be regarded as giving well-deﬁned clusters.
 </li>
+</ul>
 </li>
+
 <li> Contents:
   <ul>
   <li>SRC
